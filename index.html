@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="myscripts.js"></script>
+    </head>
+    <body>
+        <div class="outer-container">
+            <div class="left-container">
+                <div class="box1">
+                    <p class="name">Logan Johnson</p>
+                </div>
+
+                <div class="box2">
+                    <button class="main-button" id="resume-button" onclick="showResume()">Resume</button>
+                    <button class="main-button" id="contact-button" onclick="showContact()">Contact</button>
+                    <button class="main-button" id="aboutMe-button" onclick="showAboutMe()">About Me</button>
+                </div>
+
+            </div>
+            <div class="right-container">
+                <div class="box3">
+                    <div id="pdf-container" style="display: none;">
+                        <div class="scrollable-container">
+                            <img id="resume-image" src="Johnson-2025Resume.jpg" alt="Resume Image" width="100%" />
+                        </div>
+                        <div class="downloadButton">
+                            <button class="download-button" onclick="downloadResume()">Download Resume</button>
+                        </div>
+                    </div>
+
+                    <div id="contact-container" class="contact-container" style="display: none;">
+                        <div class="column">
+                            <img class="resize-image" src="email.png" />
+                            <p><strong>Email:</strong> johnsonl8959@my.uwstout.edu</p>
+                        </div>
+                        <div class="column">
+                            <img class="resize-image" src="linkedIn.png" />
+                            <h2><a href="https://www.linkedin.com/in/logan-johnson-16387929a/">LinkedIn</a></h2>
+                        </div>
+                        <div class="column">
+                            <img class="resize-image" src="github.png" />
+                            <h2><a href="https://github.com/llogon">GitHub</a></h2>
+                        </div>
+                    </div>
+
+                    <div id="aboutme-container">
+                        <!-- Placeholder text for now, will come back to eventually -->
+                         <h1 style="text-align: left;">About Me</h1>
+                        <p style="text-align: left;">
+                            Hello, my name is Logan Johnson, and I'm a sophomore at UW-Stout pursuing a degree in Computer Science. I have a strong interest
+                            in backend development and database design. Recently, I developed a budgeting website as my final project in a web development course,
+                            utilizing HTML, CSS, PHP, SQL, and JavaScript. I enjoy designing structured, efficient systems and aim to pursue a career in backend or 
+                            database engineering.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>

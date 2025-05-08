@@ -1,0 +1,157 @@
+html, body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background:#24293e;
+    background-size: 400%, 400%;
+    animation: gradientMove 20s ease infinite;
+    user-select: none; 
+}
+
+p {
+    line-height: 1.3;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    animation: fontChange 5s infinite; 
+    text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column; 
+    
+    align-items: flex-end;
+    gap: 20px; 
+    width: 25%;
+}
+
+.right-container {
+    width: 45%; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.column {
+    float: left;
+    width: 33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.resize-image {
+    width: 150px;
+    height: 150px;
+}
+
+.box1, .box2, .box3 {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box1 {
+    height: 10vh;
+
+}
+
+.box2 {
+    width: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 25vh;
+}
+
+.box3 {
+    width: 40vw;
+    height: 40vh;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 1);
+    background: #4E515C;
+}
+
+.scrollable-container {
+    height: 40vh;
+    width: 100%;
+    overflow-y: scroll;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 1);
+}
+
+.scrollable-container::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+#resume-image {
+    width: 100%;
+    object-fit: contain;
+}
+
+.download-button {
+    margin: 35px;
+}
+
+.main-button, .download-button {
+    width: 10vw;
+    min-width: 155px;;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #8EBBFF;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+
+
+.main-button:hover, .download-button:hover {
+    transform: translateY(-5px);
+    background-color: #7862F8;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 1);
+    font-weight: bold;
+}
+
